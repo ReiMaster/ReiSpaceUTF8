@@ -1,0 +1,93 @@
+//20130716
+	////////////////////////////////////////////////////////////////////////////
+	//                             语义操作及对应序号                                                                      //
+	////////////////////////////////////////////////////////////////////////////
+	/*
+	 *MainSpace内的操作：
+	 *ActivateNewNodeInCognitiveGraph()                                       1
+	 *ActivateNewNodeInCognitiveGraph(String symbol, int type)                2
+	 *ActivateSecondHighActivatedLevelNodeInCognitiveGraph()                  3//1007
+	 * 
+	 *AssignmentRelation(String relation)                                     11-20（肯定是不够的）
+	 *AssignmentSymbolInCognitiveGraph(String symbol)                         21//1004
+	 *AssignmentTypeInCognitiveGraph(int type)                                31
+	 * 
+	 *LinkInCognitiveGraph()                                                  41
+	 *
+	 *GetRelation()                                                           51
+	 *
+	 *AssignmentRelation("上")                                                11                                                                                 
+	 *AssignmentRelation("下")                                                12
+	 *AssignmentRelation("左")                                                13
+	 *AssignmentRelation("右")                                                14
+	 *AssignmentRelation("接触")                                              15
+	 *AssignmentRelation("施力")                                              16
+	 *AssignmentRelation("强制")                                              17
+	 *
+	 *
+	 *
+	 *ImageSpace内的操作：
+	 *ActivateImageSpace(String symbol)                                       101
+	 *ActivateImageSpace()                                                    102
+	 *
+	 *AssignmentSymbolInImageSpace(String symbol)                             111//1005
+	 *
+	 *BasicSpaceReasoning(int changeX, int changeY)                           141-150(这个可能也不太够)
+	 *
+	 *BasicMove(0,-3)                                                         151
+	 *
+	 *BasicSpaceReasoning(-5, 0)//左                                          						      141
+	 *BasicSpaceReasoning(5, 0)//右                                           							  142
+	 *BasicSpaceReasoning(0, -5)//上                                          							  143
+	 *BasicSpaceReasoning(0, 5)//下                                           							  144
+	 *
+	 *BasicSpaceReasoning(0, -3)//接触                                        						  145
+	 *
+	 *GetRelationFromImageSpace()                                             199
+	 *
+	 *AttributeSpace内的操作：
+	 *颜色空间操作：
+	 *ActivateColorSpace(String symbol)                                       201
+	 *
+         *
+	 *ColorReasoning(0);//浅                                                                                                                                      241
+	 *ColorReasoning(1);//相等                                                                       				      242
+	 *ColorReasoning(2);//深                                                   								  243
+	 *
+	 *GetRelationFromColorSpace()                                             261
+	 *
+	 *力量空间操作：
+	 *ActivateForceSpace()                                                    301
+	 *ActivateForceSpace(int power)                                           302
+	 *
+	 *AssignmentSymbolInForceSpace(String symbol)                             311//1009
+	 *
+	 *DynamicForceReasoning()                                                 341
+	 *
+	 *GetRelationFromForceSpace()                                             351
+	 *
+	 *对AttributeSpace总体的操作：
+	 *GetAttribute()                                                          399
+	 *
+	 *对象空间操作：
+	 *ActivateObjectSpace()                                                   401
+	 *ActivateObjectSpace(String word)                                        402
+	 *ActivateObjectSpace(int activatedlevel)                                 403
+	 *
+	 *
+	 *获得对象节点之间的关系
+	 *GetObjectRelation()                                                     499
+	 *
+	 *
+	 *Mind内的操作：
+	 *3                                                                      1003
+	 *4                                                                      1004
+	 *5                                                                      1005
+	 *6                                                                      1006->1004
+	 *7                                                                      1007->1007 1003(1007->1006)->1006 1003
+	 *9                                                                      1009->1004 1004 1004 1005 1009(1009->1007)->1004 1004 1004 1005 1007
+	 *10                                                                     1010
+	 *
+
+	 *
+	 */
